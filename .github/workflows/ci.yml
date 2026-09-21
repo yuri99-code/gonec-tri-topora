@@ -15,7 +15,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pytest -v
       - name: Составить донесение о проверке
-        run: echo "Проверка пройдена: $(date)" > report.txt
+      - run: echo "Проверка пройдена: $(date)" > report.txt
       - name: Сохранить донесение как трофей
         uses: actions/upload-artifact@v4
         with:
